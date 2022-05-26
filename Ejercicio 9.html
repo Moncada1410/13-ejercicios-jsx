@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>EJERCICIO REACT 9</title>
+  </head>
+  <body>
+    <div id="root">
+    </div>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+
+const data = {
+  title_1: "Cartelera de vuelos - Aeropuerto el mirador",
+  title_2: "Llegadas",
+  title_3: "Salidas",
+}
+
+const element = (
+  <div>
+    <h1>{data.title_1}</h1>
+    <h2>{data.title_2}</h2>
+    
+    <table border='1'>
+      <thead>
+        <th>{data.th_1='Aerolinea'}</th>
+        <th>{data.th_1='Nro. vuelo'}</th>
+        <th>{data.th_1='Estatus'}</th>
+        <th>{data.th_1='Hora estimada'}</th>
+        <th>{data.th_1='Puerta'}</th>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>{data.td_1="AIRLAN"}</td>
+          <td>{data.td_1="355"}</td>
+          <td>{data.td_1="ATERRIZO"}</td>
+          <td>{data.td_1="2:45PM"}</td>
+          <td>{data.td_1="3"}</td>
+        </tr>
+
+        <tr>
+          <td>{data.td_2="VIAJAR"}</td>
+          <td>{data.td_2="556"}</td>
+          <td>{data.td_2="RETARDADO"}</td>
+          <td>{data.td_2="2:35PM"}</td>
+          <td>{data.td_2="6"}</td>
+        </tr>
+
+        <tr>
+          <td>{data.td_3="AEROVUELO"}</td>
+          <td>{data.td_3="1234"}</td>
+          <td>{data.td_3="EN VUELO"}</td>
+          <td>{data.td_3="3:45PM"}</td>
+          <td>{data.td_3="8"}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>{data.title_3}</h2>
+
+    <table border='1'>
+      <thead>
+        <th>{data.th_1='Aerolinea'}</th>
+        <th>{data.th_1='Nro. vuelo'}</th>
+        <th>{data.th_1='Estatus'}</th>
+        <th>{data.th_1='Hora estimada'}</th>
+        <th>{data.th_1='Puerta'}</th>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>{data.td_1="AIRLAN"}</td>
+          <td>{data.td_1="355"}</td>
+          <td>{data.td_1="EMBARCANDO"}</td>
+          <td>{data.td_1="2:15PM"}</td>
+          <td>{data.td_1="1"}</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+);
+
+
+
+ReactDOM.render(
+  element,
+  document.getElementById('root')
+);
+    </script>
+  </body>
+</html>

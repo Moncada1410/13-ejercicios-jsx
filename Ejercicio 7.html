@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>EJERCICIO REACT 7</title>
+  </head>
+  <body>
+    <div id="root">
+    </div>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+
+const data = {
+  title_1: "Destinos turisticos",
+  title_2: "America",
+  list_1: "Argentina", 
+  subList_1_1: "Buenos Aires",
+  subList_1_2: "Bariloche",
+  list_2: "Brasil", 
+  subList_2_1: "Rio de Janeiro",
+  subList_2_2: "Brasilia",
+  list_3: "Chile", 
+  subList_3_1: "Santiago",
+  subList_3_2: "Valparaiso",
+  list_4: "Colombia", 
+  subList_4_1: "Bogota",
+  subList_4_2: "Cartagena de Indias",
+  
+}
+
+const element = (
+  <div>
+    <h1>{data.title_1}</h1>
+    <h2>{data.title_2}</h2>
+    <ol>
+      <li><b>{data.list_1}</b></li>
+      <ol>
+        <li><em>{data.subList_1_1}</em></li>
+        <li><em>{data.subList_1_2}</em></li>
+      </ol>
+
+      <li><b>{data.list_2}</b></li>
+      <ol>
+        <li><em>{data.subList_2_1}</em></li>
+        <li><em>{data.subList_2_2}</em></li>
+      </ol>
+
+      <li><b>{data.list_3}</b></li>
+      <ol>
+        <li><em>{data.subList_3_1}</em></li>
+        <li><em>{data.subList_3_2}</em></li>
+      </ol>
+
+      <li><b>{data.list_4}</b></li>
+      <ol>
+        <li><em>{data.subList_4_1}</em></li>
+        <li><em>{data.subList_4_2}</em></li>
+      </ol>
+    </ol>
+  </div>
+);
+
+ReactDOM.render(
+  element,
+  document.getElementById('root')
+);
+    </script>
+  </body>
+</html>

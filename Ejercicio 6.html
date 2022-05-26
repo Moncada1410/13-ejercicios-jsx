@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>EJERCICIO REACT 6</title>
+  </head>
+  <body>
+    <div id="root">
+    </div>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+
+const data = {
+  title_1: "El Noticiero Next University",
+  title_2: "Programas de Tecnología",
+  title_3: "Desarrollador Web",
+  title_4: "Android",
+  title_5: "Programa de Negocio",
+  title_6: "Mercadeo Digital",
+}
+
+const element = (
+  <div>
+    <h1>{data.title_1}</h1>
+    <h2>{data.title_2}</h2>
+    <h3>{data.title_3}</h3>
+    
+    <p>
+      <em><b>{data.paragraph_1="Next University"}</b></em>{data.paragraph_1=" lanza su programa de formación"} <b>{data.paragraph_1=" ''Desarrollador Web'' "}</b> {data.paragraph_1="con la finalidad de capacitar a personas en las tendecias actuales sobre tecnologías, en el caso de desarrollo web, se basa temas relacionados a la implementación de Front-End con teconologías y Frameworks, tales como:"} <em>{data.paragraph_1="HTML5,CSS,JavaScript, Boostrap, entre otros."}</em>
+    </p>
+    
+    <h3>{data.title_4}</h3>
+
+    <p>
+      {data.paragraph_2="En"} <em><b>{data.paragraph_2="Next University"}</b></em> {data.paragraph_2="te ofrecemos el programa"} <em>{data.paragraph_2="Android"}</em> {data.paragraph_2="que te da las herramientas necesarias para diseñar e implemtar aplicaciones Android para dispositivos móviles, partiendo de un conocimiento básico de"} <em>{data.paragraph_2="Java"}</em> {data.paragraph_2="utilizando el entorno de desarrollo"} <em>{data.paragraph_2="Android Studio."}</em> {data.paragraph_2="Aprenderás los aspectos fundamentales para crear aplicaciones Android interactivas, dinámicas y exitosas utilizando técnicas para el manejo de los recursos, datos, segundos planos, localización, sensores, animaciones, gráficos, multimedia y monetización."}
+    </p>
+    
+    <h2>{data.title_5}</h2>
+    <h3>{data.title_6}</h3>
+
+    <p>
+      <em><b>{data.paragraph_3="Next University"}</b></em> {data.paragraph_3="coloca a tu disposición de programa de"} <b>{data.paragraph_3=" ''Mercadeo Digital''."}</b> {data.paragraph_3="Sabías que... Mercadeo Digital o Digital Marketing es mucho más que hacer y publicar anuncios. Se trata del consumidor y la estrategia de negocio. Estos son los puntos de partida para que cualquier acción de mercadeo digital, <em>sea exitosa y optimice la inversión."} <b> {data.paragraph_3=" sea exitosa y optimice la inversión."}</b> {data.paragraph_3="Este certificado, es un programa completo y práctcico, que permite entender al consumidor, la industria, la competencia y los retos del negocio propio: para crear o implementar estrategias a la medida, en diferentes plataformas  y medios digitales. Por supuesto, monitoreando los resultados para tomar decisiones en tiempo real."}
+    </p>
+
+  </div>
+);
+
+ReactDOM.render(
+  element,
+  document.getElementById('root')
+);
+    </script>
+  </body>
+</html>

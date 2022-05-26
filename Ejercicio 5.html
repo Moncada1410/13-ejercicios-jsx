@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>EJERCICIO REACT 5</title>
+  </head>
+  <body>
+    <div id="root">
+    </div>
+
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+
+const data = {
+  title_1: "Pagina inicial de Juan Tuesta",
+  paragraph_1: "Bienvenido a mi pagina personal. Soy un alumno de la Universidad de Deusto y esta es mi pagina inicial, con la lista de mis enlaces favoritos y otra informacion de interes",
+  title_2: "Enlaces favoritos:",
+  title_3: "Paginas personales",
+  title_4: "Paginas de referencia",
+  
+  list_1: "Paginas personales", 
+  list_2: "Paginas de referencia", 
+  list_3: "Portales", 
+  list_4: "Publicaciones", 
+
+  list_5: "Documentalistas", 
+  subList_1:"Charkes F. Golfarn",
+  subList_2:"Lou Burnard",
+  subList_3:"Tim Berners-Lee",
+  list_6: "Historiadores", 
+  list_7: "Linguisticas", 
+  list_8: "Traductores",
+
+  list_9: "Bibliotecas universitarias", 
+  list_10: "Centros de documentacion", 
+  list_11: "Museos de arte contemporaneo", 
+  list_12: "Medios de comunicacion",
+  paragraph_5: "Juan Tuesta, Universidad de Deusto, marzo 2002.",
+}
+
+const element = (
+  <div>
+    <h1>{data.title_1}</h1>
+    <p>{data.paragraph_1}</p>
+    <h2>{data.title_2}</h2>
+    <ol>
+      <li><a href="#">{data.list_1}</a></li>
+      <li>{data.list_2}</li>
+      <li>{data.list_3}</li>
+      <li>{data.list_4}</li>
+    </ol>
+
+    <hr size="1px" color="black"></hr>
+
+    <h2>{data.title_3}</h2>
+    <ol>
+      <li>{data.list_5}</li>
+      <ul>
+        <li>{data.subList_1}</li>
+        <li>{data.subList_2}</li>
+        <li>{data.subList_3}</li>
+      </ul>
+      <li>{data.list_6}</li>
+      <li>{data.list_7}</li>
+      <li>{data.list_8}</li>
+    </ol>
+
+     <hr size="1px" color="black"></hr>
+
+    <h2>{data.title_4}</h2>
+    <ol>
+      <li>{data.list_9}</li>
+      <li>{data.list_10}</li>
+      <li>{data.list_11}</li>
+      <li>{data.list_12}</li>
+    </ol>
+
+    <hr size="1px" color="black"></hr>
+    <p><em>{data.paragraph_5}</em></p>
+
+  </div>
+);
+
+ReactDOM.render(
+  element,
+  document.getElementById('root')
+);
+    </script>
+  </body>
+</html>
